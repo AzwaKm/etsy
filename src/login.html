@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="py-4 bg-white shadow-sm">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="../assets/logoetsy.png" alt="" class="w-32">
+            </a>
+            <!-- Search Bar -->
+            <div class="w-full max-w-xl flex relative text-gray-400">
+                <span class="absolute left-4 text-lg top-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input class="w-full border border-black border-r-0 rounded-l-md pl-12 py-3 pr-3 focus:outline-none"
+                    type="text" placeholder="Search for anything">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md">Search</button>
+            </div>
+
+            <!-- Icon -->
+            <div class="items-center flex space-x-4">
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-">Favorites</div>
+                    <span
+                        class="absolute right-0 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">6</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-">Checkout</div>
+                    <span
+                        class="absolute -right-3 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">10</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-">Account</div>
+                    <span
+                        class="absolute right-0 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">3</span>
+                </a>
+                <span class="relative flex size-3">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex size-3 rounded-full bg-primary"></span>
+                </span>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="mt-3 mb-3 border-b border-gray-400">
+            <div class="container flex">
+                <!-- All Categories -->
+                <div class="bg-primary rounded-3xl px-8 py-4 items-center cursor-pointer relative group">
+                    <span class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="capitalize ml-2 text-white">Categories</span>
+
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon1.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Accessories</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon2.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Home & Living</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon3.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Baby</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon4.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Pet Supplies</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon5.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Bath & Beauty</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon6.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Jewelry</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navbar Link -->
+                <div class="flex justify-between items-center flex-grow pl-12">
+                    <div class="flex items-center space-x-6 capitalize">
+                        <a href="shop.html" class="text-gray-600 hover:text-primary transition"><i
+                                class="fa-solid fa-gift"></i> Gifts</a>
+                        <a href="#about" class="text-gray-600 hover:text-primary transition">About Us</a>
+                        <a href="#big" class="text-gray-600 hover:text-primary transition">Home Favorites</a>
+                        <a href="#app" class="text-gray-600 hover:text-primary transition">Fashion Finds</a>
+                    </div>
+                    <a href="login.html"
+                        class="text-white hover:text-primary hover:bg-primary hover:bg-opacity-20 transition animate-bounce bg-primary bg-opacity-50 rounded-3xl px-3 py-3 items-center cursor-pointer">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Login -->
+     <div class="container py-16">
+        <div class="max-w-lg mx-auto shadow hover:shadow-lg hover:shadow-gray-400 px-6 py-7 rounded-3xl overflow-hidden">
+            <h3 class="text-2xl uppercase font-medium mb-1">Login</h3>
+            <p class="text-gray-600 mb-6 text-sm">Login if you are a returning customer</p>
+
+            <!-- Form Login -->
+             <form action="">
+                <div class="space-y-4">
+                    <div>
+                        <label for="email" class="text-gray-600 block mb-2">Email Address</label>
+                        <input class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder:text-gray-400"  type="text" placeholder="Enter your email address" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="password" class="text-gray-600 block mb-2">Password</label>
+                        <input class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder:text-gray-400"  type="password" placeholder="Enter your password" name="email" id="password">
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center mt-6">
+                    <div class="flex items-center">
+                        <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" name="" id="">
+                        <label for="" class="text-gray-600 ml-3 cursor-pointer">Remember me</label>
+                    </div>
+                    <a href="#" class="text-primary">Forgot Password</a>
+                </div>
+
+                <div class="my-4">
+                    <button class="bg-primary block w-full py-2 text-center text-white border border-primary rounded hover:bg-transparent hover:text-primary uppercase font-roboto font-medium transition">Login</button>
+                </div>
+             </form>
+            <!-- End Form Login -->
+
+            <!-- Login With -->
+             <div class="relative flex justify-center mt-5">
+                <div class="text-gray-600 uppercase px-3 bg-white relative z-10">Or login with</div>
+                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-200"></div>
+             </div>
+             <div class="flex mt-4 gap-3">
+                <a href="#" class="w-1/2 py-2 text-center text-white bg-green-500 rounded uppercase font-roboto font-medium text-sm hover:bg-green-600">Whatsapp</a>
+                <a href="#" class="w-1/2 py-2 text-center text-white bg-red-500 rounded uppercase font-roboto font-medium text-sm hover:bg-red-600">Google</a>
+             </div>
+
+             <p class="mt-4 text-gray-600 text-center">Don't have an account? <a class="text-primary" href="register.html">Register Now</a></p>
+            <!-- End Login With -->
+        </div>
+     </div>
+    <!-- End Login -->
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-12 border-t border-gray-100 bg-white">
+        <div class="container grid grid-cols-3">
+            <!-- Footer Text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/assets/logoetsy.png" alt="">
+                <button href="#"
+                    class="text-white hover:text-primary hover:bg-opacity-20 animate-bounce bg-primary bg-opacity-50 px-8 py-3 font-medium rounded-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Download the Etsy App
+                </button>
+                <p>© 2025 Etsy, Inc.</p>
+            </div>
+            <!-- End Footer Text -->
+
+            <!-- Footer Links -->
+            <div class="col-span-2 grid grid-cols-2 gap-10">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Shop</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Gift cards</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy Registry</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy blog</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sitemap</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Sell</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sell On Etsy</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Teams</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Forums</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Affiliates and Creators</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">About</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy, Inc.</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Policies</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Investors</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Careers</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Press</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Impact</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Help</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Help Center</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Privacy settings</a>
+
+                            <div class="flex space-x-6 mt-3">
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Footer Links -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>

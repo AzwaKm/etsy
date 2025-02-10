@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/output.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="py-4 bg-white shadow-sm">
+        <div class="container flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="../assets/logoetsy.png" alt="" class="w-32">
+            </a>
+            <!-- Search Bar -->
+            <div class="w-full max-w-xl flex relative text-gray-400">
+                <span class="absolute left-4 text-lg top-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input class="w-full border border-black border-r-0 rounded-l-md pl-12 py-3 pr-3 focus:outline-none"
+                    type="text" placeholder="Search for anything">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md">Search</button>
+            </div>
+
+            <!-- Icon -->
+            <div class="items-center flex space-x-4">
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-">Favorites</div>
+                    <span
+                        class="absolute right-0 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">6</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-">Checkout</div>
+                    <span
+                        class="absolute -right-3 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">10</span>
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-">Account</div>
+                    <span
+                        class="absolute right-0 -top-1 w-5 h-5 bg-primary rounded-full flex items-center justify-center text-white text-xs">3</span>
+                </a>
+                <span class="relative flex size-3">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+                    <span class="relative inline-flex size-3 rounded-full bg-primary"></span>
+                </span>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="mt-3 mb-3 border-b border-gray-400">
+            <div class="container flex">
+                <!-- All Categories -->
+                <div class="bg-primary rounded-3xl px-8 py-4 items-center cursor-pointer relative group">
+                    <span class="text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <span class="capitalize ml-2 text-white">Categories</span>
+
+                    <!-- Dropdown Menu -->
+                    <div
+                        class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon1.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Accessories</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon2.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Home & Living</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon3.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Baby</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon4.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Pet Supplies</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon5.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Bath & Beauty</span>
+                        </a>
+
+                        <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                            <img src="/assets/icon6.png" alt="" class="w-5 h-5 object-contain">
+                            <span class="text-gray-600 text-sm ml-6">Jewelry</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navbar Link -->
+                <div class="flex justify-between items-center flex-grow pl-12">
+                    <div class="flex items-center space-x-6 capitalize">
+                        <a href="shop.html" class="text-gray-600 hover:text-primary transition"><i
+                                class="fa-solid fa-gift"></i> Gifts</a>
+                        <a href="" class="text-gray-600 hover:text-primary transition">About Us</a>
+                        <a href="" class="text-gray-600 hover:text-primary transition">Home Favorites</a>
+                        <a href="" class="text-gray-600 hover:text-primary transition">Fashion Finds</a>
+                    </div>
+                    <a href="login.html"
+                        class="text-white hover:text-primary hover:bg-primary hover:bg-opacity-20 transition animate-bounce bg-primary bg-opacity-50 rounded-3xl px-3 py-3 items-center cursor-pointer">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Breakcrums -->
+    <div class="container flex py-4 items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house-chimney-window"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Checkout</p>
+    </div>
+    <!-- End Breakcrums -->
+
+    <!-- Checkout Wrapper -->
+     <div class="container grid grid-cols-12 gap-3 items-start pb-16 pt-4">
+        <!-- Checkout Form -->
+         <div class="col-span-8 border border-gray-200 p-4 rounded-3xl">
+            <h3 class="text-lg font-medium capitalize mb-4">Checkout</h3>
+
+            <div class="space-y-4">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="" class="text-gray-600 mb-2 block">First Name <span class="text-primary">*</span></label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div>
+                        <label for="" class="text-gray-600 mb-2 block">Last Name <span class="text-primary">*</span></label>
+                        <input type="text" class="input-box">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Company Name</label>
+                    <input type="text" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Country/Region <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Street Address <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Town/City <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Post Code <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Phone Number <span class="text-primary">*</span></label>
+                    <input type="number" class="input-box">
+                </div>
+
+                <div>
+                    <label for="" class="text-gray-600 mb-2 block">Email Address <span class="text-primary">*</span></label>
+                    <input type="text" class="input-box">
+                </div>
+
+            </div>
+         </div>
+        <!-- End Checkout Form -->
+
+        <!-- Order Summary -->
+         <div class="col-span-4 border border-gray-200 p-4 rounded-3xl">
+            <h4 class="text-white text-lg mb-4 rounded-xl font-medium uppercase bg-primary opacity-40 py-1 px-3 text-center">Receipt Overview</h4>
+
+            <div class="flex justify-between">
+                <div>
+                    <h5 class="text-gray-800 font-medium">Rainbow Sweatshirt</h5>
+                    <p class="text-sm text-gray-600">Size: M</p>
+                </div>
+                <p class="text-gray-600">x1</p>
+                <p class="text-gray-800 font md:">Rp 236,842</p>
+            </div>
+
+            <div class="flex justify-between">
+                <div>
+                    <h5 class="text-gray-800 font-medium">Mothers Ring</h5>
+                    <p class="text-sm text-gray-600">Size: lg</p>
+                </div>
+                <p class="text-gray-600">x2</p>
+                <p class="text-gray-800 font md:">Rp 1.140,916</p>
+            </div>
+
+            <div class="flex justify-between">
+                <div>
+                    <h5 class="text-gray-800 font-medium">Diamond Heart Ring</h5>
+                    <p class="text-sm text-gray-600">Size: S</p>
+                </div>
+                <p class="text-gray-600">x3</p>
+                <p class="text-gray-800 font md:">Rp 1.191,852</p>
+            </div>
+
+            <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                <p>Subtotal</p>
+                <p>Rp 2.569,61</p>
+            </div>
+
+            <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                <p>Shipping</p>
+                <p>Free</p>
+            </div>
+
+            <div class="flex justify-between border-b border-gray-200 text-gray-800 font-medium py-3 uppercase">
+                <p>Admin</p>
+                <p>Rp 5.000</p>
+            </div>
+
+            <div class="flex items-center mb-4 pt-4">
+                <input class="text-primary focus:ring-0 rounded-sm cursor-pointer w-3 h-3" type="checkbox" id="agreement">
+                <label class="text-gray-600 ml-3 cursor-pointer" for="agreement">Agree to our terms & conditions</label>
+            </div>
+            <a href="index.html" class="block w-full bg-primary text-center py-1 text-white border border-primary rounded-xl hover:bg-transparent hover:text-primary transition">Checkout</a>
+
+         </div>
+        <!-- End Order Summary -->
+     </div>
+    <!-- End Checkout Wrapper -->
+
+    <!-- Footer -->
+    <footer class="pt-16 pb-12 border-t border-gray-100 bg-white">
+        <div class="container grid grid-cols-3">
+            <!-- Footer Text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/assets/logoetsy.png" alt="">
+                <button href="#"
+                    class="text-white hover:text-primary hover:bg-opacity-20 animate-bounce bg-primary bg-opacity-50 px-8 py-3 font-medium rounded-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">Download the Etsy App
+                </button>
+                <p>© 2025 Etsy, Inc.</p>
+            </div>
+            <!-- End Footer Text -->
+
+            <!-- Footer Links -->
+            <div class="col-span-2 grid grid-cols-2 gap-10">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Shop</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Gift cards</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy Registry</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy blog</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sitemap</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Sell</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sell On Etsy</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Teams</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Forums</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Affiliates and Creators</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">About</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Etsy, Inc.</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Policies</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Investors</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Careers</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Press</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Impact</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wider">Help</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Help Center</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Privacy settings</a>
+
+                            <div class="flex space-x-6 mt-3">
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="#" class="hover:text-gray-500">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Footer Links -->
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>
